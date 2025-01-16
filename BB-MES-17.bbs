@@ -1,0 +1,947 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DefaultBlackBirdSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="12">
+  <PasswordHash />
+  <PasswordSalt />
+  <BreakevenOffset>0</BreakevenOffset>
+  <MoneyManagement>
+    <ApplyMode>Individual</ApplyMode>
+    <EnforceWatermarkDuringLive>false</EnforceWatermarkDuringLive>
+    <EnforceNetMaxProfitDuringLive>false</EnforceNetMaxProfitDuringLive>
+    <EnforceNetMaxLossDuringLive>false</EnforceNetMaxLossDuringLive>
+    <SerializeAccountPerformance>true</SerializeAccountPerformance>
+    <AccountSize>10000</AccountSize>
+    <RiskPerTradeOnAccount>0.0625</RiskPerTradeOnAccount>
+    <UseDailyMaxProfit>false</UseDailyMaxProfit>
+    <UseDailyMaxLoss>true</UseDailyMaxLoss>
+    <DailyMaxLoss>543.75</DailyMaxLoss>
+    <DailyMaxProfit>0</DailyMaxProfit>
+    <EnableTradeFitAndRiskPerTrade>false</EnableTradeFitAndRiskPerTrade>
+    <UseMaxConsecutiveLosses>false</UseMaxConsecutiveLosses>
+    <UseMaxConsecutiveWins>false</UseMaxConsecutiveWins>
+    <UseMaxLosingTrades>false</UseMaxLosingTrades>
+    <UseMaxWinningTrades>false</UseMaxWinningTrades>
+    <UseMaxTotalTrades>false</UseMaxTotalTrades>
+    <MaxConsecutiveLosses>5</MaxConsecutiveLosses>
+    <MaxConsecutiveWins>30</MaxConsecutiveWins>
+    <MaxLosingTrades>10</MaxLosingTrades>
+    <MaxWinningTrades>5</MaxWinningTrades>
+    <MaxTotalTrades>1</MaxTotalTrades>
+    <RiskPerTradeValueType>PercentOf</RiskPerTradeValueType>
+    <RiskPerTradeTradeFit>
+      <Type>Percent</Type>
+      <Mode>Balanced</Mode>
+      <AcceptableVariance>0.01</AcceptableVariance>
+    </RiskPerTradeTradeFit>
+    <UseDailyWatermark>true</UseDailyWatermark>
+    <ActivateWatermarkAfter>1000</ActivateWatermarkAfter>
+    <ActivateWatermarkAfterValueType>Fixed</ActivateWatermarkAfterValueType>
+    <StopTradingAfterWatermark>0.54375</StopTradingAfterWatermark>
+    <StopTradingAfterWatermarkValueType>PercentOf</StopTradingAfterWatermarkValueType>
+    <UseForAutoTrading_Daily>true</UseForAutoTrading_Daily>
+    <UseForManualTrading_Daily>true</UseForManualTrading_Daily>
+    <UseForAutoTrading_Account>true</UseForAutoTrading_Account>
+    <UseForManualTrading_Account>false</UseForManualTrading_Account>
+  </MoneyManagement>
+  <RiskManagement>
+    <MinRewardRiskRatio>2</MinRewardRiskRatio>
+    <UseMinRewardRiskRatio>false</UseMinRewardRiskRatio>
+    <UseExitTradeWhenLossesExceeds>false</UseExitTradeWhenLossesExceeds>
+    <ExitTradeWhenLossesExceeds>0</ExitTradeWhenLossesExceeds>
+    <AllowWideningStops>false</AllowWideningStops>
+    <TradeFitMinRewardRiskRatio>
+      <Type>Percent</Type>
+      <Mode>Balanced</Mode>
+      <AcceptableVariance>0.015</AcceptableVariance>
+    </TradeFitMinRewardRiskRatio>
+  </RiskManagement>
+  <ScheduleSettings>
+    <Customized>true</Customized>
+    <BasedOnTemplate />
+    <TimeZone>Central Standard Time;-360;(UTC-06:00) Central Time (US &amp; Canada);Central Standard Time;Central Daylight Time;[01:01:0001;12:31:2006;60;[0;02:00:00;4;1;0;];[0;02:00:00;10;5;0;];][01:01:2007;12:31:9999;60;[0;02:00:00;3;2;0;];[0;02:00:00;11;1;0;];];</TimeZone>
+    <ScheduledTimes>
+      <SessionBlock>
+        <StartTimeSerial>2000-01-03T08:00:00</StartTimeSerial>
+        <EndTimeSerial>2000-01-03T15:00:00</EndTimeSerial>
+      </SessionBlock>
+      <SessionBlock>
+        <StartTimeSerial>2000-01-04T08:00:00</StartTimeSerial>
+        <EndTimeSerial>2000-01-04T15:00:00</EndTimeSerial>
+      </SessionBlock>
+      <SessionBlock>
+        <StartTimeSerial>2000-01-05T08:00:00</StartTimeSerial>
+        <EndTimeSerial>2000-01-05T15:00:00</EndTimeSerial>
+      </SessionBlock>
+      <SessionBlock>
+        <StartTimeSerial>2000-01-06T08:00:00</StartTimeSerial>
+        <EndTimeSerial>2000-01-06T15:00:00</EndTimeSerial>
+      </SessionBlock>
+      <SessionBlock>
+        <StartTimeSerial>2000-01-07T08:00:00</StartTimeSerial>
+        <EndTimeSerial>2000-01-07T15:00:00</EndTimeSerial>
+      </SessionBlock>
+    </ScheduledTimes>
+    <EnableAutoTradeScheduling>true</EnableAutoTradeScheduling>
+    <EnableManualTradeScheduling>false</EnableManualTradeScheduling>
+    <ForceTradesToExitLeadTimeSeconds>30</ForceTradesToExitLeadTimeSeconds>
+    <ForceTradesToExit>false</ForceTradesToExit>
+  </ScheduleSettings>
+  <TradeSignals>
+    <item>
+      <key>
+        <int>343219522</int>
+      </key>
+      <value>
+        <TradeSignal xsi:type="BloodHoundSignal">
+          <Name>MES-1min</Name>
+          <ID>343219522</ID>
+          <Enabled>true</Enabled>
+          <UseEntrySignals>true</UseEntrySignals>
+          <UseExitSignals>false</UseExitSignals>
+          <BHTemplateFile>MES-1-min-20250116.bht</BHTemplateFile>
+          <ConfidenceCompareRatio>1.5</ConfidenceCompareRatio>
+          <ConfidenceUseCompare>false</ConfidenceUseCompare>
+          <LongThreshold>0.8</LongThreshold>
+          <ShortThreshold>0.8</ShortThreshold>
+          <ShowRacingStripes>true</ShowRacingStripes>
+          <ShowOnChart>true</ShowOnChart>
+          <EntryLogicTemplate>763341362</EntryLogicTemplate>
+          <ExitLogicTemplate>1771768299</ExitLogicTemplate>
+        </TradeSignal>
+      </value>
+    </item>
+  </TradeSignals>
+  <OrderSettingsSet>
+    <item>
+      <key>
+        <int>191916098</int>
+      </key>
+      <value>
+        <OrderSettingsSet>
+          <AllowUpscaling>true</AllowUpscaling>
+          <AllowDownscaling>true</AllowDownscaling>
+          <KeepScalingRatio>true</KeepScalingRatio>
+          <AllowProfitTargetAdjustment>false</AllowProfitTargetAdjustment>
+          <AllowStopLossAdjustment>false</AllowStopLossAdjustment>
+          <UseMinProfitTarget>true</UseMinProfitTarget>
+          <MinProfitTarget>1</MinProfitTarget>
+          <UseMaxProfitTarget>false</UseMaxProfitTarget>
+          <MaxProfitTarget>1</MaxProfitTarget>
+          <UseMinStopLoss>true</UseMinStopLoss>
+          <MinStopLoss>1</MinStopLoss>
+          <UseMaxStopLoss>false</UseMaxStopLoss>
+          <MaxStopLoss>1</MaxStopLoss>
+          <UpscalingTradeFit>
+            <Type>Int</Type>
+            <Mode>SemiFlexible</Mode>
+            <AcceptableVariance>10</AcceptableVariance>
+          </UpscalingTradeFit>
+          <DownscalingTradeFit>
+            <Type>Int</Type>
+            <Mode>SemiFlexible</Mode>
+            <AcceptableVariance>10</AcceptableVariance>
+          </DownscalingTradeFit>
+          <KeepScalingRatioTradeFit>
+            <Type>Percent</Type>
+            <Mode>Balanced</Mode>
+            <AcceptableVariance>1</AcceptableVariance>
+          </KeepScalingRatioTradeFit>
+          <ProfitTargetAdjustmentTradeFit>
+            <Type>Int</Type>
+            <Mode>Rigid</Mode>
+            <AcceptableVariance>5</AcceptableVariance>
+          </ProfitTargetAdjustmentTradeFit>
+          <StopLossAdjustmentTradeFit>
+            <Type>Int</Type>
+            <Mode>Rigid</Mode>
+            <AcceptableVariance>5</AcceptableVariance>
+          </StopLossAdjustmentTradeFit>
+          <PlacementSafegaurdMode>Constrain</PlacementSafegaurdMode>
+          <EnforceMaxConstraintsOnUpdate>true</EnforceMaxConstraintsOnUpdate>
+          <Name>A</Name>
+          <ID>191916098</ID>
+          <Entry>
+            <ID>1488261424</ID>
+            <OrderType>Entry</OrderType>
+            <OrderSubmissionType>Limit</OrderSubmissionType>
+            <EnableAutoTypeSelect>false</EnableAutoTypeSelect>
+            <Name />
+            <SerializableColor>-16776961</SerializableColor>
+            <TrailingMode>None</TrailingMode>
+            <BasedOn>
+              <DataType>Price</DataType>
+              <AbsoluteVal>0</AbsoluteVal>
+              <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+              <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+              <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+              <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+              <PriceTypeLong>Close</PriceTypeLong>
+              <PriceTypeShort>Close</PriceTypeShort>
+              <SwingNumberOf>3</SwingNumberOf>
+              <SwingType>Standard</SwingType>
+              <SwingSize>7</SwingSize>
+              <DtbStrength>20</DtbStrength>
+              <UseCloseValues>false</UseCloseValues>
+              <IgnoreInsideBars>true</IgnoreInsideBars>
+              <UseBreakouts>true</UseBreakouts>
+              <LongSwingTopBottom>Tops</LongSwingTopBottom>
+              <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+              <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+              <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+              <LinRegChannelPeriod>40</LinRegChannelPeriod>
+              <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+              <LongLinRegChannel>Upper</LongLinRegChannel>
+              <ShortLinRegChannel>Lower</ShortLinRegChannel>
+              <IndicatorDisplacement>0</IndicatorDisplacement>
+              <UserSelectedIndicator>
+                <CategoryOrder />
+                <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+                  <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+                </Indicator>
+                <LongPlots>
+                  <IndicatorOutput type="Plot">0</IndicatorOutput>
+                </LongPlots>
+                <ShortPlots>
+                  <IndicatorOutput type="Plot">0</IndicatorOutput>
+                </ShortPlots>
+                <Input />
+              </UserSelectedIndicator>
+              <LongTicksOffset>0</LongTicksOffset>
+              <ShortTicksOffset>0</ShortTicksOffset>
+              <OffsetDataComponent>
+                <DataType>Indicator</DataType>
+                <AbsoluteVal>0</AbsoluteVal>
+                <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+                <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+                <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+                <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+                <PriceTypeLong>Close</PriceTypeLong>
+                <PriceTypeShort>Close</PriceTypeShort>
+                <SwingNumberOf>3</SwingNumberOf>
+                <SwingType>Standard</SwingType>
+                <SwingSize>7</SwingSize>
+                <DtbStrength>20</DtbStrength>
+                <UseCloseValues>false</UseCloseValues>
+                <IgnoreInsideBars>true</IgnoreInsideBars>
+                <UseBreakouts>true</UseBreakouts>
+                <LongSwingTopBottom>Tops</LongSwingTopBottom>
+                <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+                <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+                <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+                <LinRegChannelPeriod>40</LinRegChannelPeriod>
+                <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+                <LongLinRegChannel>Upper</LongLinRegChannel>
+                <ShortLinRegChannel>Lower</ShortLinRegChannel>
+                <IndicatorDisplacement>0</IndicatorDisplacement>
+                <UserSelectedIndicator>
+                  <CategoryOrder />
+                  <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+                    <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+                  </Indicator>
+                  <LongPlots>
+                    <IndicatorOutput type="Plot">0</IndicatorOutput>
+                  </LongPlots>
+                  <ShortPlots>
+                    <IndicatorOutput type="Plot">0</IndicatorOutput>
+                  </ShortPlots>
+                  <Input />
+                </UserSelectedIndicator>
+                <Null>true</Null>
+                <LongFactor>1</LongFactor>
+                <ShortFactor>-1</ShortFactor>
+              </OffsetDataComponent>
+              <SpecialPrice>None</SpecialPrice>
+            </BasedOn>
+            <CancelAfter>
+              <ID>1855245950</ID>
+              <Name>Cancel After Trigger </Name>
+              <Repeat>
+                <Mode>NoRepeat</Mode>
+                <XTimes>0</XTimes>
+                <TriggerSerialize>
+                  <TriggerBase xsi:nil="true" />
+                </TriggerSerialize>
+                <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                <Delay>
+                  <Value>1</Value>
+                  <Unit>Bars</Unit>
+                </Delay>
+              </Repeat>
+              <TriggerSerialize>
+                <TriggerBase xsi:type="MultiAndTrigger">
+                  <Children>
+                    <TriggerBase xsi:type="IntervalTrigger">
+                      <Intervals />
+                      <Mode>First</Mode>
+                    </TriggerBase>
+                  </Children>
+                </TriggerBase>
+              </TriggerSerialize>
+            </CancelAfter>
+            <PlacementAfter>
+              <ID>227993012</ID>
+              <Name>Place After Trigger </Name>
+              <Repeat>
+                <Mode>NoRepeat</Mode>
+                <XTimes>0</XTimes>
+                <TriggerSerialize>
+                  <TriggerBase xsi:nil="true" />
+                </TriggerSerialize>
+                <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                <Delay>
+                  <Value>1</Value>
+                  <Unit>Bars</Unit>
+                </Delay>
+              </Repeat>
+              <TriggerSerialize>
+                <TriggerBase xsi:type="AlwaysPlace" />
+              </TriggerSerialize>
+            </PlacementAfter>
+            <ReverseAfter>
+              <ID>488929976</ID>
+              <Name>Reverse After None &lt;Do Not Reverse&gt;</Name>
+              <Repeat>
+                <Mode>NoRepeat</Mode>
+                <XTimes>0</XTimes>
+                <TriggerSerialize>
+                  <TriggerBase xsi:nil="true" />
+                </TriggerSerialize>
+                <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                <Delay>
+                  <Value>1</Value>
+                  <Unit>Bars</Unit>
+                </Delay>
+              </Repeat>
+              <TriggerSerialize>
+                <TriggerBase xsi:type="NeverReverse" />
+              </TriggerSerialize>
+              <MaxConsecutiveReversals>2</MaxConsecutiveReversals>
+              <UseMaxConsecutiveReversals>false</UseMaxConsecutiveReversals>
+              <ReversalType>JustThisOrderSet</ReversalType>
+              <ReverseMode>ReverseOnlyWhenFlat</ReverseMode>
+              <Upscale>false</Upscale>
+              <UpscaleMode>Addition</UpscaleMode>
+              <UpscaleValue>10</UpscaleValue>
+              <UseUnrealizedLoss>false</UseUnrealizedLoss>
+              <UnrealizedLoss>10</UnrealizedLoss>
+            </ReverseAfter>
+            <Locked>false</Locked>
+            <CustomTraillingEvaluateUsing>Closest</CustomTraillingEvaluateUsing>
+            <Triggers />
+          </Entry>
+          <StopLoss>
+            <ID>1993901839</ID>
+            <OrderType>StopLoss</OrderType>
+            <OrderSubmissionType>Stop</OrderSubmissionType>
+            <EnableAutoTypeSelect>false</EnableAutoTypeSelect>
+            <Name />
+            <SerializableColor>-29696</SerializableColor>
+            <TrailingMode>Custom</TrailingMode>
+            <BasedOn>
+              <DataType>Price</DataType>
+              <AbsoluteVal>0</AbsoluteVal>
+              <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+              <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+              <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+              <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+              <PriceTypeLong>Close</PriceTypeLong>
+              <PriceTypeShort>Close</PriceTypeShort>
+              <SwingNumberOf>3</SwingNumberOf>
+              <SwingType>Standard</SwingType>
+              <SwingSize>7</SwingSize>
+              <DtbStrength>20</DtbStrength>
+              <UseCloseValues>false</UseCloseValues>
+              <IgnoreInsideBars>true</IgnoreInsideBars>
+              <UseBreakouts>true</UseBreakouts>
+              <LongSwingTopBottom>Tops</LongSwingTopBottom>
+              <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+              <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+              <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+              <LinRegChannelPeriod>40</LinRegChannelPeriod>
+              <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+              <LongLinRegChannel>Upper</LongLinRegChannel>
+              <ShortLinRegChannel>Lower</ShortLinRegChannel>
+              <IndicatorDisplacement>0</IndicatorDisplacement>
+              <UserSelectedIndicator>
+                <CategoryOrder />
+                <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+                  <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+                </Indicator>
+                <LongPlots>
+                  <IndicatorOutput type="Plot">0</IndicatorOutput>
+                </LongPlots>
+                <ShortPlots>
+                  <IndicatorOutput type="Plot">0</IndicatorOutput>
+                </ShortPlots>
+                <Input />
+              </UserSelectedIndicator>
+              <LongTicksOffset>-30</LongTicksOffset>
+              <ShortTicksOffset>30</ShortTicksOffset>
+              <OffsetDataComponent>
+                <DataType>Indicator</DataType>
+                <AbsoluteVal>0</AbsoluteVal>
+                <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+                <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+                <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+                <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+                <PriceTypeLong>Close</PriceTypeLong>
+                <PriceTypeShort>Close</PriceTypeShort>
+                <SwingNumberOf>3</SwingNumberOf>
+                <SwingType>Standard</SwingType>
+                <SwingSize>7</SwingSize>
+                <DtbStrength>20</DtbStrength>
+                <UseCloseValues>false</UseCloseValues>
+                <IgnoreInsideBars>true</IgnoreInsideBars>
+                <UseBreakouts>true</UseBreakouts>
+                <LongSwingTopBottom>Tops</LongSwingTopBottom>
+                <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+                <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+                <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+                <LinRegChannelPeriod>40</LinRegChannelPeriod>
+                <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+                <LongLinRegChannel>Upper</LongLinRegChannel>
+                <ShortLinRegChannel>Lower</ShortLinRegChannel>
+                <IndicatorDisplacement>0</IndicatorDisplacement>
+                <UserSelectedIndicator>
+                  <CategoryOrder />
+                  <Indicator type="NinjaTrader.NinjaScript.Indicators.ATR">
+                    <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">20</Period>
+                  </Indicator>
+                  <LongPlots>
+                    <IndicatorOutput type="Plot">0</IndicatorOutput>
+                  </LongPlots>
+                  <ShortPlots>
+                    <IndicatorOutput type="Plot">0</IndicatorOutput>
+                  </ShortPlots>
+                  <Input />
+                </UserSelectedIndicator>
+                <Null>true</Null>
+                <LongFactor>0</LongFactor>
+                <ShortFactor>-0</ShortFactor>
+              </OffsetDataComponent>
+              <SpecialPrice>EntryPrice</SpecialPrice>
+            </BasedOn>
+            <CancelAfter>
+              <ID>2073229659</ID>
+              <Name>Cancel After Trigger </Name>
+              <Repeat>
+                <Mode>NoRepeat</Mode>
+                <XTimes>0</XTimes>
+                <TriggerSerialize>
+                  <TriggerBase xsi:nil="true" />
+                </TriggerSerialize>
+                <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                <Delay>
+                  <Value>1</Value>
+                  <Unit>Bars</Unit>
+                </Delay>
+              </Repeat>
+              <TriggerSerialize>
+                <TriggerBase xsi:type="NeverCancel" />
+              </TriggerSerialize>
+            </CancelAfter>
+            <PlacementAfter>
+              <ID>95912227</ID>
+              <Name>Place After Trigger </Name>
+              <Repeat>
+                <Mode>NoRepeat</Mode>
+                <XTimes>0</XTimes>
+                <TriggerSerialize>
+                  <TriggerBase xsi:nil="true" />
+                </TriggerSerialize>
+                <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                <Delay>
+                  <Value>1</Value>
+                  <Unit>Bars</Unit>
+                </Delay>
+              </Repeat>
+              <TriggerSerialize>
+                <TriggerBase xsi:type="AlwaysPlace" />
+              </TriggerSerialize>
+            </PlacementAfter>
+            <ReverseAfter>
+              <ID>1029578909</ID>
+              <Name>Reverse After None &lt;Do Not Reverse&gt;</Name>
+              <Repeat>
+                <Mode>NoRepeat</Mode>
+                <XTimes>0</XTimes>
+                <TriggerSerialize>
+                  <TriggerBase xsi:nil="true" />
+                </TriggerSerialize>
+                <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                <Delay>
+                  <Value>1</Value>
+                  <Unit>Bars</Unit>
+                </Delay>
+              </Repeat>
+              <TriggerSerialize>
+                <TriggerBase xsi:type="NeverReverse" />
+              </TriggerSerialize>
+              <MaxConsecutiveReversals>2</MaxConsecutiveReversals>
+              <UseMaxConsecutiveReversals>false</UseMaxConsecutiveReversals>
+              <ReversalType>JustThisOrderSet</ReversalType>
+              <ReverseMode>ReverseOnlyWhenFlat</ReverseMode>
+              <Upscale>false</Upscale>
+              <UpscaleMode>Addition</UpscaleMode>
+              <UpscaleValue>10</UpscaleValue>
+              <UseUnrealizedLoss>false</UseUnrealizedLoss>
+              <UnrealizedLoss>10</UnrealizedLoss>
+            </ReverseAfter>
+            <Locked>false</Locked>
+            <CustomTraillingEvaluateUsing>Closest</CustomTraillingEvaluateUsing>
+            <Triggers>
+              <TriggerConditionAndAction>
+                <ID>1425343536</ID>
+                <Name>ATR Trailing</Name>
+                <Repeat>
+                  <Mode>RepeatNoLimit</Mode>
+                  <XTimes>0</XTimes>
+                  <TriggerSerialize>
+                    <TriggerBase xsi:nil="true" />
+                  </TriggerSerialize>
+                  <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                  <Delay>
+                    <Value>1</Value>
+                    <Unit>TicksInDirection</Unit>
+                  </Delay>
+                </Repeat>
+                <TriggerSerialize>
+                  <TriggerBase xsi:type="ProfitLossTrigger">
+                    <Mode>Profit</Mode>
+                    <MinAmount>12</MinAmount>
+                    <MaxAmount>0</MaxAmount>
+                    <UseMinAmount>true</UseMinAmount>
+                    <UseMaxAmount>false</UseMaxAmount>
+                    <MeasurementUnit>Ticks</MeasurementUnit>
+                    <ATRPeriod>50</ATRPeriod>
+                  </TriggerBase>
+                </TriggerSerialize>
+                <ActionSerialize>
+                  <ActionBase xsi:type="MoveRelative">
+                    <Move>
+                      <DataType>Price</DataType>
+                      <AbsoluteVal>0</AbsoluteVal>
+                      <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+                      <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+                      <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+                      <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+                      <PriceTypeLong>Last</PriceTypeLong>
+                      <PriceTypeShort>Last</PriceTypeShort>
+                      <SwingNumberOf>3</SwingNumberOf>
+                      <SwingType>Standard</SwingType>
+                      <SwingSize>7</SwingSize>
+                      <DtbStrength>20</DtbStrength>
+                      <UseCloseValues>false</UseCloseValues>
+                      <IgnoreInsideBars>true</IgnoreInsideBars>
+                      <UseBreakouts>true</UseBreakouts>
+                      <LongSwingTopBottom>Tops</LongSwingTopBottom>
+                      <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+                      <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+                      <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+                      <LinRegChannelPeriod>40</LinRegChannelPeriod>
+                      <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+                      <LongLinRegChannel>Upper</LongLinRegChannel>
+                      <ShortLinRegChannel>Lower</ShortLinRegChannel>
+                      <IndicatorDisplacement>0</IndicatorDisplacement>
+                      <UserSelectedIndicator>
+                        <CategoryOrder />
+                        <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+                          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+                        </Indicator>
+                        <LongPlots>
+                          <IndicatorOutput type="Plot">0</IndicatorOutput>
+                        </LongPlots>
+                        <ShortPlots>
+                          <IndicatorOutput type="Plot">0</IndicatorOutput>
+                        </ShortPlots>
+                        <Input />
+                      </UserSelectedIndicator>
+                      <LongTicksOffset>-2</LongTicksOffset>
+                      <ShortTicksOffset>2</ShortTicksOffset>
+                      <OffsetDataComponent>
+                        <DataType>Indicator</DataType>
+                        <AbsoluteVal>0</AbsoluteVal>
+                        <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+                        <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+                        <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+                        <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+                        <PriceTypeLong>Close</PriceTypeLong>
+                        <PriceTypeShort>Close</PriceTypeShort>
+                        <SwingNumberOf>3</SwingNumberOf>
+                        <SwingType>Standard</SwingType>
+                        <SwingSize>7</SwingSize>
+                        <DtbStrength>20</DtbStrength>
+                        <UseCloseValues>false</UseCloseValues>
+                        <IgnoreInsideBars>true</IgnoreInsideBars>
+                        <UseBreakouts>true</UseBreakouts>
+                        <LongSwingTopBottom>Tops</LongSwingTopBottom>
+                        <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+                        <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+                        <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+                        <LinRegChannelPeriod>40</LinRegChannelPeriod>
+                        <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+                        <LongLinRegChannel>Upper</LongLinRegChannel>
+                        <ShortLinRegChannel>Lower</ShortLinRegChannel>
+                        <IndicatorDisplacement>0</IndicatorDisplacement>
+                        <UserSelectedIndicator>
+                          <CategoryOrder />
+                          <Indicator type="NinjaTrader.NinjaScript.Indicators.ATR">
+                            <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">20</Period>
+                          </Indicator>
+                          <LongPlots>
+                            <IndicatorOutput type="Plot">0</IndicatorOutput>
+                          </LongPlots>
+                          <ShortPlots>
+                            <IndicatorOutput type="Plot">0</IndicatorOutput>
+                          </ShortPlots>
+                          <Input />
+                        </UserSelectedIndicator>
+                        <Null>true</Null>
+                        <LongFactor>-1.5</LongFactor>
+                        <ShortFactor>1.5</ShortFactor>
+                      </OffsetDataComponent>
+                      <SpecialPrice>None</SpecialPrice>
+                    </Move>
+                    <AllowedMovement>WithDirectionOnly</AllowedMovement>
+                    <Constraint>NoCondition</Constraint>
+                  </ActionBase>
+                </ActionSerialize>
+              </TriggerConditionAndAction>
+              <TriggerConditionAndAction>
+                <ID>10917102</ID>
+                <Name>Rule B</Name>
+                <Repeat>
+                  <Mode>NoRepeat</Mode>
+                  <XTimes>0</XTimes>
+                  <TriggerSerialize>
+                    <TriggerBase xsi:nil="true" />
+                  </TriggerSerialize>
+                  <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                  <Delay>
+                    <Value>1</Value>
+                    <Unit>Bars</Unit>
+                  </Delay>
+                </Repeat>
+                <TriggerSerialize>
+                  <TriggerBase xsi:type="ProfitLossTrigger">
+                    <Mode>Profit</Mode>
+                    <MinAmount>10</MinAmount>
+                    <MaxAmount>0</MaxAmount>
+                    <UseMinAmount>true</UseMinAmount>
+                    <UseMaxAmount>false</UseMaxAmount>
+                    <MeasurementUnit>Ticks</MeasurementUnit>
+                    <ATRPeriod>50</ATRPeriod>
+                  </TriggerBase>
+                </TriggerSerialize>
+                <ActionSerialize>
+                  <ActionBase xsi:type="MoveRelative">
+                    <Move>
+                      <DataType>Price</DataType>
+                      <AbsoluteVal>0</AbsoluteVal>
+                      <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+                      <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+                      <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+                      <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+                      <PriceTypeLong>Last</PriceTypeLong>
+                      <PriceTypeShort>Last</PriceTypeShort>
+                      <SwingNumberOf>3</SwingNumberOf>
+                      <SwingType>Standard</SwingType>
+                      <SwingSize>7</SwingSize>
+                      <DtbStrength>20</DtbStrength>
+                      <UseCloseValues>false</UseCloseValues>
+                      <IgnoreInsideBars>true</IgnoreInsideBars>
+                      <UseBreakouts>true</UseBreakouts>
+                      <LongSwingTopBottom>Tops</LongSwingTopBottom>
+                      <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+                      <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+                      <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+                      <LinRegChannelPeriod>40</LinRegChannelPeriod>
+                      <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+                      <LongLinRegChannel>Upper</LongLinRegChannel>
+                      <ShortLinRegChannel>Lower</ShortLinRegChannel>
+                      <IndicatorDisplacement>0</IndicatorDisplacement>
+                      <UserSelectedIndicator>
+                        <CategoryOrder />
+                        <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+                          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+                        </Indicator>
+                        <LongPlots>
+                          <IndicatorOutput type="Plot">0</IndicatorOutput>
+                        </LongPlots>
+                        <ShortPlots>
+                          <IndicatorOutput type="Plot">0</IndicatorOutput>
+                        </ShortPlots>
+                        <Input />
+                      </UserSelectedIndicator>
+                      <LongTicksOffset>1</LongTicksOffset>
+                      <ShortTicksOffset>-1</ShortTicksOffset>
+                      <OffsetDataComponent>
+                        <DataType>Indicator</DataType>
+                        <AbsoluteVal>0</AbsoluteVal>
+                        <PriceLookbackPeriodLong>1</PriceLookbackPeriodLong>
+                        <PriceLookbackPeriodShort>1</PriceLookbackPeriodShort>
+                        <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+                        <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+                        <PriceTypeLong>Close</PriceTypeLong>
+                        <PriceTypeShort>Close</PriceTypeShort>
+                        <SwingNumberOf>3</SwingNumberOf>
+                        <SwingType>Standard</SwingType>
+                        <SwingSize>7</SwingSize>
+                        <DtbStrength>20</DtbStrength>
+                        <UseCloseValues>false</UseCloseValues>
+                        <IgnoreInsideBars>true</IgnoreInsideBars>
+                        <UseBreakouts>true</UseBreakouts>
+                        <LongSwingTopBottom>Tops</LongSwingTopBottom>
+                        <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+                        <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+                        <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+                        <LinRegChannelPeriod>40</LinRegChannelPeriod>
+                        <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+                        <LongLinRegChannel>Upper</LongLinRegChannel>
+                        <ShortLinRegChannel>Lower</ShortLinRegChannel>
+                        <IndicatorDisplacement>0</IndicatorDisplacement>
+                        <UserSelectedIndicator>
+                          <CategoryOrder />
+                          <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+                            <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+                          </Indicator>
+                          <LongPlots>
+                            <IndicatorOutput type="Plot">0</IndicatorOutput>
+                          </LongPlots>
+                          <ShortPlots>
+                            <IndicatorOutput type="Plot">0</IndicatorOutput>
+                          </ShortPlots>
+                          <Input />
+                        </UserSelectedIndicator>
+                        <Null>true</Null>
+                        <LongFactor>-1</LongFactor>
+                        <ShortFactor>1</ShortFactor>
+                      </OffsetDataComponent>
+                      <SpecialPrice>EntryPrice</SpecialPrice>
+                    </Move>
+                    <AllowedMovement>WithDirectionOnly</AllowedMovement>
+                    <Constraint>NoCondition</Constraint>
+                  </ActionBase>
+                </ActionSerialize>
+              </TriggerConditionAndAction>
+              <TriggerConditionAndAction>
+                <ID>463639667</ID>
+                <Name>Rule C</Name>
+                <Repeat>
+                  <Mode>NoRepeat</Mode>
+                  <XTimes>0</XTimes>
+                  <TriggerSerialize>
+                    <TriggerBase xsi:nil="true" />
+                  </TriggerSerialize>
+                  <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                  <Delay>
+                    <Value>1</Value>
+                    <Unit>Bars</Unit>
+                  </Delay>
+                </Repeat>
+                <TriggerSerialize>
+                  <TriggerBase xsi:type="MultiAnyOrderTrigger">
+                    <Children>
+                      <TriggerBase xsi:type="BHLogicSignal">
+                        <LogicTemplateID>1123885197</LogicTemplateID>
+                        <SignalTriggerMode>SignalOppositeDirection</SignalTriggerMode>
+                        <ConfidenceCompareRatio>1.5</ConfidenceCompareRatio>
+                        <ConfidenceUseCompare>false</ConfidenceUseCompare>
+                        <LongThreshold>0.8</LongThreshold>
+                        <ShortThreshold>0.8</ShortThreshold>
+                        <ShowOnChart>false</ShowOnChart>
+                        <ShowRacingStripes>true</ShowRacingStripes>
+                        <BHTemplateFile>MES-1-min-20250114.bht</BHTemplateFile>
+                      </TriggerBase>
+                      <TriggerBase xsi:type="ProfitLossTrigger">
+                        <Mode>Loss</Mode>
+                        <MinAmount>15</MinAmount>
+                        <MaxAmount>0</MaxAmount>
+                        <UseMinAmount>true</UseMinAmount>
+                        <UseMaxAmount>false</UseMaxAmount>
+                        <MeasurementUnit>Ticks</MeasurementUnit>
+                        <ATRPeriod>50</ATRPeriod>
+                      </TriggerBase>
+                    </Children>
+                  </TriggerBase>
+                </TriggerSerialize>
+                <ActionSerialize>
+                  <ActionBase xsi:type="Flatten" />
+                </ActionSerialize>
+              </TriggerConditionAndAction>
+              <TriggerConditionAndAction>
+                <ID>1049617723</ID>
+                <Name>Rule D</Name>
+                <Repeat>
+                  <Mode>NoRepeat</Mode>
+                  <XTimes>0</XTimes>
+                  <TriggerSerialize>
+                    <TriggerBase xsi:nil="true" />
+                  </TriggerSerialize>
+                  <CheckConditionEveryRepeat>false</CheckConditionEveryRepeat>
+                  <Delay>
+                    <Value>1</Value>
+                    <Unit>Bars</Unit>
+                  </Delay>
+                </Repeat>
+                <TriggerSerialize>
+                  <TriggerBase xsi:type="MultiAnyOrderTrigger">
+                    <Children>
+                      <TriggerBase xsi:type="BHLogicSignal">
+                        <LogicTemplateID>1771768299</LogicTemplateID>
+                        <SignalTriggerMode>SignalOppositeDirection</SignalTriggerMode>
+                        <ConfidenceCompareRatio>1.5</ConfidenceCompareRatio>
+                        <ConfidenceUseCompare>false</ConfidenceUseCompare>
+                        <LongThreshold>0.8</LongThreshold>
+                        <ShortThreshold>0.8</ShortThreshold>
+                        <ShowOnChart>false</ShowOnChart>
+                        <ShowRacingStripes>true</ShowRacingStripes>
+                        <BHTemplateFile>MES-1-min-20250114.bht</BHTemplateFile>
+                      </TriggerBase>
+                      <TriggerBase xsi:type="ProfitLossTrigger">
+                        <Mode>Loss</Mode>
+                        <MinAmount>15</MinAmount>
+                        <MaxAmount>0</MaxAmount>
+                        <UseMinAmount>true</UseMinAmount>
+                        <UseMaxAmount>false</UseMaxAmount>
+                        <MeasurementUnit>Ticks</MeasurementUnit>
+                        <ATRPeriod>50</ATRPeriod>
+                      </TriggerBase>
+                    </Children>
+                  </TriggerBase>
+                </TriggerSerialize>
+                <ActionSerialize>
+                  <ActionBase xsi:type="Flatten" />
+                </ActionSerialize>
+              </TriggerConditionAndAction>
+            </Triggers>
+          </StopLoss>
+          <Quantity>6</Quantity>
+        </OrderSettingsSet>
+      </value>
+    </item>
+  </OrderSettingsSet>
+  <AlertSettings>
+    <Alerts>
+      <item>
+        <key>
+          <EAlertType>StopMoveInDirectionLarge</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="SoundAlert">
+            <Enabled>true</Enabled>
+            <LongSoundFile>large-coins.wav</LongSoundFile>
+            <ShortSoundFile>large-coins.wav</ShortSoundFile>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>StopMoveInDirectionMedium</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="SoundAlert">
+            <Enabled>true</Enabled>
+            <LongSoundFile>medium-coins.wav</LongSoundFile>
+            <ShortSoundFile>medium-coins.wav</ShortSoundFile>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>StopMoveInDirectionSmall</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="SoundAlert">
+            <Enabled>true</Enabled>
+            <LongSoundFile>small-coins.wav</LongSoundFile>
+            <ShortSoundFile>small-coins.wav</ShortSoundFile>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>ActivePosition</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="NoAlert">
+            <Enabled>false</Enabled>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>Flat</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="NoAlert">
+            <Enabled>false</Enabled>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>EntrySignal</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="NoAlert">
+            <Enabled>false</Enabled>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>ExitSignal</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="NoAlert">
+            <Enabled>false</Enabled>
+          </AlertBase>
+        </value>
+      </item>
+      <item>
+        <key>
+          <EAlertType>Error</EAlertType>
+        </key>
+        <value>
+          <AlertBase xsi:type="NoAlert">
+            <Enabled>false</Enabled>
+          </AlertBase>
+        </value>
+      </item>
+    </Alerts>
+    <Enabled>false</Enabled>
+  </AlertSettings>
+  <StrategyManagerEngineOptions>
+    <AllowReentryOnSameBar>true</AllowReentryOnSameBar>
+    <OppositeSignalsReverseTrade>false</OppositeSignalsReverseTrade>
+    <AllowAutoTradesDuringManualPosition>false</AllowAutoTradesDuringManualPosition>
+    <MarketDataThrottleDelay>300</MarketDataThrottleDelay>
+  </StrategyManagerEngineOptions>
+  <BloodHoundTemplateNames>
+    <string>MES-1-min-20250114.bht</string>
+    <string>MES-1-min-20250116.bht</string>
+  </BloodHoundTemplateNames>
+  <UIColorSerialize>-1315601</UIColorSerialize>
+  <ManualTriggerButtonSettings>
+    <Buttons>
+      <ManualTriggerButton>
+        <ID>284928879</ID>
+        <IsRowBreak>false</IsRowBreak>
+        <SerializableColor>-65536</SerializableColor>
+        <Name>Red</Name>
+      </ManualTriggerButton>
+      <ManualTriggerButton>
+        <ID>1831343735</ID>
+        <IsRowBreak>false</IsRowBreak>
+        <SerializableColor>-16744448</SerializableColor>
+        <Name>Green</Name>
+      </ManualTriggerButton>
+      <ManualTriggerButton>
+        <ID>1703620780</ID>
+        <IsRowBreak>false</IsRowBreak>
+        <SerializableColor>-16776961</SerializableColor>
+        <Name>Blue</Name>
+      </ManualTriggerButton>
+    </Buttons>
+  </ManualTriggerButtonSettings>
+</DefaultBlackBirdSettings>
