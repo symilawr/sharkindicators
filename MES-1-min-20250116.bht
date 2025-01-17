@@ -9352,10 +9352,380 @@
         </IndicatorMeasurerModuleValueCollection>
       </SolverData>
     </ConfidenceSolver>
+    <ConfidenceSolver xsi:type="IndicatorCrossover">
+      <ID>1720918019</ID>
+      <ProtectedType>None</ProtectedType>
+      <Name>Crossover_6</Name>
+      <InvertOutput>false</InvertOutput>
+      <SwapOutput>false</SwapOutput>
+      <Enabled>true</Enabled>
+      <Description />
+      <Symbol>C</Symbol>
+      <PlotBrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#00FFFFFF&lt;/SolidColorBrush&gt;</PlotBrushSerialize>
+      <Evaluate>Both</Evaluate>
+      <BarsIndex>0</BarsIndex>
+      <DataType>Indicator</DataType>
+      <UserSelectedIndicator>
+        <CategoryOrder />
+        <Indicator type="NinjaTrader.NinjaScript.Indicators.RSI">
+          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">7</Period>
+          <Smooth Name="Smooth" GroupName="NinjaScriptParameters" Order="1">3</Smooth>
+          <Lines>
+            <Line>
+              <Name>Lower</Name>
+              <Value>30</Value>
+            </Line>
+            <Line>
+              <Name>Upper</Name>
+              <Value>70</Value>
+            </Line>
+          </Lines>
+        </Indicator>
+        <LongPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </LongPlots>
+        <ShortPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </ShortPlots>
+        <Input />
+      </UserSelectedIndicator>
+      <IndicatorDisplacement>0</IndicatorDisplacement>
+      <AbsoluteVal>0</AbsoluteVal>
+      <PriceTypeLong>Close</PriceTypeLong>
+      <PriceTypeShort>Close</PriceTypeShort>
+      <PriceLookbackPeriod>1</PriceLookbackPeriod>
+      <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+      <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+      <SwingNumberOf>3</SwingNumberOf>
+      <SwingType>Standard</SwingType>
+      <SwingSize>7</SwingSize>
+      <DtbStrength>20</DtbStrength>
+      <UseCloseValues>false</UseCloseValues>
+      <LongSwingTopBottom>Tops</LongSwingTopBottom>
+      <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+      <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+      <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+      <IgnoreInsideBars>true</IgnoreInsideBars>
+      <UseBreakouts>true</UseBreakouts>
+      <LinRegChannelPeriod>40</LinRegChannelPeriod>
+      <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+      <LongLinRegChannel>Upper</LongLinRegChannel>
+      <ShortLinRegChannel>Lower</ShortLinRegChannel>
+      <DataType2>Indicator</DataType2>
+      <UserSelectedIndicator2>
+        <CategoryOrder />
+        <Indicator type="NinjaTrader.NinjaScript.Indicators.RSI">
+          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">7</Period>
+          <Smooth Name="Smooth" GroupName="NinjaScriptParameters" Order="1">3</Smooth>
+          <Lines>
+            <Line>
+              <Name>Lower</Name>
+              <Value>30</Value>
+            </Line>
+            <Line>
+              <Name>Upper</Name>
+              <Value>70</Value>
+            </Line>
+          </Lines>
+        </Indicator>
+        <LongPlots>
+          <IndicatorOutput type="Plot">1</IndicatorOutput>
+        </LongPlots>
+        <ShortPlots>
+          <IndicatorOutput type="Plot">1</IndicatorOutput>
+        </ShortPlots>
+        <Input />
+      </UserSelectedIndicator2>
+      <IndicatorDisplacement2>0</IndicatorDisplacement2>
+      <AbsoluteVal2>0</AbsoluteVal2>
+      <PriceTypeLong2>Close</PriceTypeLong2>
+      <PriceTypeShort2>Close</PriceTypeShort2>
+      <PriceLookbackPeriod2>1</PriceLookbackPeriod2>
+      <PriceLookbackActionLong2>SingleValue</PriceLookbackActionLong2>
+      <PriceLookbackActionShort2>SingleValue</PriceLookbackActionShort2>
+      <SwingNumberOf2>3</SwingNumberOf2>
+      <SwingType2>Standard</SwingType2>
+      <SwingSize2>7</SwingSize2>
+      <DtbStrength2>20</DtbStrength2>
+      <UseCloseValues2>false</UseCloseValues2>
+      <IgnoreInsideBars2>true</IgnoreInsideBars2>
+      <UseBreakouts2>true</UseBreakouts2>
+      <LongSwingTopBottom2>Tops</LongSwingTopBottom2>
+      <LongSwingWideTight2>WidestSwing</LongSwingWideTight2>
+      <ShortSwingTopBottom2>Bottoms</ShortSwingTopBottom2>
+      <ShortSwingWideTight2>WidestSwing</ShortSwingWideTight2>
+      <LinRegChannelPeriod2>40</LinRegChannelPeriod2>
+      <LinRegChannelWidthDev2>4</LinRegChannelWidthDev2>
+      <LongLinRegChannel2>Upper</LongLinRegChannel2>
+      <ShortLinRegChannel2>Lower</ShortLinRegChannel2>
+      <CrossesOccurWhenEqual>false</CrossesOccurWhenEqual>
+      <LookbackPeriod>1</LookbackPeriod>
+      <CrossesInDirection>1</CrossesInDirection>
+      <CrossesAgainst>0</CrossesAgainst>
+      <DecreaseOutputBy>0</DecreaseOutputBy>
+      <NoCross>0</NoCross>
+    </ConfidenceSolver>
+    <ConfidenceSolver xsi:type="BarDirection">
+      <ID>975921002</ID>
+      <ProtectedType>None</ProtectedType>
+      <Name>Bar Direction_4</Name>
+      <InvertOutput>false</InvertOutput>
+      <SwapOutput>false</SwapOutput>
+      <Enabled>true</Enabled>
+      <Description />
+      <Symbol>B</Symbol>
+      <PlotBrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#00FFFFFF&lt;/SolidColorBrush&gt;</PlotBrushSerialize>
+      <Evaluate>Both</Evaluate>
+      <BarsIndex>0</BarsIndex>
+      <NumberBarsToJudge>3</NumberBarsToJudge>
+      <StartBarsAgo>0</StartBarsAgo>
+      <MinBarSize>
+        <MeasuredIn>Ticks</MeasuredIn>
+        <ATRPeriod>100</ATRPeriod>
+        <Value>0</Value>
+      </MinBarSize>
+      <Mode>AllOrNothing</Mode>
+      <DojiMode>Default</DojiMode>
+    </ConfidenceSolver>
+    <ConfidenceSolver xsi:type="IndicatorSlope">
+      <ID>752382672</ID>
+      <ProtectedType>None</ProtectedType>
+      <Name>Slope_20</Name>
+      <InvertOutput>false</InvertOutput>
+      <SwapOutput>false</SwapOutput>
+      <Enabled>true</Enabled>
+      <Description />
+      <Symbol>S</Symbol>
+      <PlotBrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#00FFFFFF&lt;/SolidColorBrush&gt;</PlotBrushSerialize>
+      <Evaluate>Both</Evaluate>
+      <BarsIndex>0</BarsIndex>
+      <DataType>Indicator</DataType>
+      <UserSelectedIndicator>
+        <CategoryOrder />
+        <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">21</Period>
+        </Indicator>
+        <LongPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </LongPlots>
+        <ShortPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </ShortPlots>
+        <Input />
+      </UserSelectedIndicator>
+      <IndicatorDisplacement>0</IndicatorDisplacement>
+      <AbsoluteVal>0</AbsoluteVal>
+      <PriceTypeLong>Close</PriceTypeLong>
+      <PriceTypeShort>Close</PriceTypeShort>
+      <PriceLookbackPeriod>1</PriceLookbackPeriod>
+      <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+      <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+      <SwingNumberOf>3</SwingNumberOf>
+      <SwingType>Standard</SwingType>
+      <SwingSize>7</SwingSize>
+      <DtbStrength>20</DtbStrength>
+      <UseCloseValues>false</UseCloseValues>
+      <LongSwingTopBottom>Tops</LongSwingTopBottom>
+      <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+      <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+      <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+      <IgnoreInsideBars>true</IgnoreInsideBars>
+      <UseBreakouts>true</UseBreakouts>
+      <LinRegChannelPeriod>40</LinRegChannelPeriod>
+      <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+      <LongLinRegChannel>Upper</LongLinRegChannel>
+      <ShortLinRegChannel>Lower</ShortLinRegChannel>
+      <SlopePeriod>1</SlopePeriod>
+      <SolverData>
+        <FinalOutput>First</FinalOutput>
+        <ExpantionContractionCalculationType>DistanceDelta</ExpantionContractionCalculationType>
+        <OutputValueText>slope</OutputValueText>
+        <PropertiesDescriptionModifier>Slopes</PropertiesDescriptionModifier>
+        <IndicatorMeasurerModuleValueCollection>
+          <IndicatorMeasurerModuleValue>
+            <Long>
+              <IndicatorMeasurerType>Fixed</IndicatorMeasurerType>
+              <RangeCalcMode>Inside</RangeCalcMode>
+              <FixedMode>GreaterThan</FixedMode>
+              <RangeBorderMode>Inclusive</RangeBorderMode>
+              <ValueSign>Minus</ValueSign>
+              <LowPriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </LowPriceUnit>
+              <PriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </PriceUnit>
+              <OutputLow>0</OutputLow>
+              <Output>1</Output>
+              <GradientOutput>false</GradientOutput>
+            </Long>
+            <Short>
+              <IndicatorMeasurerType>Fixed</IndicatorMeasurerType>
+              <RangeCalcMode>Inside</RangeCalcMode>
+              <FixedMode>LessThan</FixedMode>
+              <RangeBorderMode>Inclusive</RangeBorderMode>
+              <ValueSign>Minus</ValueSign>
+              <LowPriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </LowPriceUnit>
+              <PriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </PriceUnit>
+              <OutputLow>0</OutputLow>
+              <Output>1</Output>
+              <GradientOutput>false</GradientOutput>
+            </Short>
+          </IndicatorMeasurerModuleValue>
+        </IndicatorMeasurerModuleValueCollection>
+      </SolverData>
+    </ConfidenceSolver>
+    <ConfidenceSolver xsi:type="IndicatorComparison">
+      <ID>726584006</ID>
+      <ProtectedType>None</ProtectedType>
+      <Name>Comparison_12</Name>
+      <InvertOutput>false</InvertOutput>
+      <SwapOutput>false</SwapOutput>
+      <Enabled>true</Enabled>
+      <Description />
+      <Symbol>C</Symbol>
+      <PlotBrushSerialize>&lt;SolidColorBrush xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;#00FFFFFF&lt;/SolidColorBrush&gt;</PlotBrushSerialize>
+      <Evaluate>Both</Evaluate>
+      <BarsIndex>0</BarsIndex>
+      <DataType>Price</DataType>
+      <UserSelectedIndicator>
+        <CategoryOrder />
+        <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+        </Indicator>
+        <LongPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </LongPlots>
+        <ShortPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </ShortPlots>
+        <Input />
+      </UserSelectedIndicator>
+      <IndicatorDisplacement>0</IndicatorDisplacement>
+      <AbsoluteVal>0</AbsoluteVal>
+      <PriceTypeLong>Close</PriceTypeLong>
+      <PriceTypeShort>Close</PriceTypeShort>
+      <PriceLookbackPeriod>1</PriceLookbackPeriod>
+      <PriceLookbackActionLong>SingleValue</PriceLookbackActionLong>
+      <PriceLookbackActionShort>SingleValue</PriceLookbackActionShort>
+      <SwingNumberOf>3</SwingNumberOf>
+      <SwingType>Standard</SwingType>
+      <SwingSize>7</SwingSize>
+      <DtbStrength>20</DtbStrength>
+      <UseCloseValues>false</UseCloseValues>
+      <LongSwingTopBottom>Tops</LongSwingTopBottom>
+      <LongSwingWideTight>WidestSwing</LongSwingWideTight>
+      <ShortSwingTopBottom>Bottoms</ShortSwingTopBottom>
+      <ShortSwingWideTight>WidestSwing</ShortSwingWideTight>
+      <IgnoreInsideBars>true</IgnoreInsideBars>
+      <UseBreakouts>true</UseBreakouts>
+      <LinRegChannelPeriod>40</LinRegChannelPeriod>
+      <LinRegChannelWidthDev>4</LinRegChannelWidthDev>
+      <LongLinRegChannel>Upper</LongLinRegChannel>
+      <ShortLinRegChannel>Lower</ShortLinRegChannel>
+      <DataType2>Indicator</DataType2>
+      <UserSelectedIndicator2>
+        <CategoryOrder />
+        <Indicator type="NinjaTrader.NinjaScript.Indicators.SMA">
+          <Period Name="Period" GroupName="NinjaScriptParameters" Order="0">14</Period>
+        </Indicator>
+        <LongPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </LongPlots>
+        <ShortPlots>
+          <IndicatorOutput type="Plot">0</IndicatorOutput>
+        </ShortPlots>
+        <Input />
+      </UserSelectedIndicator2>
+      <IndicatorDisplacement2>0</IndicatorDisplacement2>
+      <AbsoluteVal2>0</AbsoluteVal2>
+      <PriceTypeLong2>Close</PriceTypeLong2>
+      <PriceTypeShort2>Close</PriceTypeShort2>
+      <PriceLookbackPeriod2>1</PriceLookbackPeriod2>
+      <PriceLookbackActionLong2>SingleValue</PriceLookbackActionLong2>
+      <PriceLookbackActionShort2>SingleValue</PriceLookbackActionShort2>
+      <SwingNumberOf2>3</SwingNumberOf2>
+      <SwingType2>Standard</SwingType2>
+      <SwingSize2>7</SwingSize2>
+      <DtbStrength2>20</DtbStrength2>
+      <UseCloseValues2>false</UseCloseValues2>
+      <IgnoreInsideBars2>true</IgnoreInsideBars2>
+      <UseBreakouts2>true</UseBreakouts2>
+      <LongSwingTopBottom2>Tops</LongSwingTopBottom2>
+      <LongSwingWideTight2>WidestSwing</LongSwingWideTight2>
+      <ShortSwingTopBottom2>Bottoms</ShortSwingTopBottom2>
+      <ShortSwingWideTight2>WidestSwing</ShortSwingWideTight2>
+      <LinRegChannelPeriod2>40</LinRegChannelPeriod2>
+      <LinRegChannelWidthDev2>4</LinRegChannelWidthDev2>
+      <LongLinRegChannel2>Upper</LongLinRegChannel2>
+      <ShortLinRegChannel2>Lower</ShortLinRegChannel2>
+      <SolverData>
+        <FinalOutput>First</FinalOutput>
+        <ExpantionContractionCalculationType>DistanceDelta</ExpantionContractionCalculationType>
+        <OutputValueText>difference</OutputValueText>
+        <PropertiesDescriptionModifier>Rules</PropertiesDescriptionModifier>
+        <IndicatorMeasurerModuleValueCollection>
+          <IndicatorMeasurerModuleValue>
+            <Long>
+              <IndicatorMeasurerType>Fixed</IndicatorMeasurerType>
+              <RangeCalcMode>Inside</RangeCalcMode>
+              <FixedMode>GreaterThan</FixedMode>
+              <RangeBorderMode>Inclusive</RangeBorderMode>
+              <ValueSign>Plus</ValueSign>
+              <LowPriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </LowPriceUnit>
+              <PriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </PriceUnit>
+              <OutputLow>0</OutputLow>
+              <Output>1</Output>
+              <GradientOutput>false</GradientOutput>
+            </Long>
+            <Short>
+              <IndicatorMeasurerType>Fixed</IndicatorMeasurerType>
+              <RangeCalcMode>Inside</RangeCalcMode>
+              <FixedMode>LessThan</FixedMode>
+              <RangeBorderMode>Inclusive</RangeBorderMode>
+              <ValueSign>Minus</ValueSign>
+              <LowPriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </LowPriceUnit>
+              <PriceUnit>
+                <MeasuredIn>Points</MeasuredIn>
+                <ATRPeriod>100</ATRPeriod>
+                <Value>0</Value>
+              </PriceUnit>
+              <OutputLow>0</OutputLow>
+              <Output>1</Output>
+              <GradientOutput>false</GradientOutput>
+            </Short>
+          </IndicatorMeasurerModuleValue>
+        </IndicatorMeasurerModuleValueCollection>
+      </SolverData>
+    </ConfidenceSolver>
   </Solvers>
   <PasswordHash />
   <PasswordSalt />
-  <SelectedLogicID>763341362</SelectedLogicID>
+  <SelectedLogicID>1771768299</SelectedLogicID>
   <LogicTemplates>
     <LogicTemplate>
       <Name>Entry Signals</Name>
@@ -9388,6 +9758,10 @@
                 <ID>1244068743</ID>
                 <ChildNodes />
               </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>1181036715</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
             </ChildNodes>
           </LogicNodeStructure>
           <LogicNodeStructure>
@@ -9401,6 +9775,10 @@
                 <ID>1244068743</ID>
                 <ChildNodes />
               </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>1181036715</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
             </ChildNodes>
           </LogicNodeStructure>
           <LogicNodeStructure>
@@ -9411,7 +9789,7 @@
                 <ChildNodes />
               </LogicNodeStructure>
               <LogicNodeStructure>
-                <ID>753918122</ID>
+                <ID>1181036715</ID>
                 <ChildNodes />
               </LogicNodeStructure>
               <LogicNodeStructure>
@@ -9419,7 +9797,7 @@
                 <ChildNodes />
               </LogicNodeStructure>
               <LogicNodeStructure>
-                <ID>1181036715</ID>
+                <ID>753918122</ID>
                 <ChildNodes />
               </LogicNodeStructure>
             </ChildNodes>
@@ -9465,210 +9843,8 @@
           </LogicNodeStructure>
         </ChildNodes>
       </SerialResultNodeStructure>
-      <SerialOrphansStructure>
-        <LogicNodeStructure>
-          <ID>1728208104</ID>
-          <ChildNodes>
-            <LogicNodeStructure>
-              <ID>385141496</ID>
-              <ChildNodes>
-                <LogicNodeStructure>
-                  <ID>1514332167</ID>
-                  <ChildNodes>
-                    <LogicNodeStructure>
-                      <ID>1007254747</ID>
-                      <ChildNodes />
-                    </LogicNodeStructure>
-                  </ChildNodes>
-                </LogicNodeStructure>
-                <LogicNodeStructure>
-                  <ID>1930337816</ID>
-                  <ChildNodes />
-                </LogicNodeStructure>
-              </ChildNodes>
-            </LogicNodeStructure>
-          </ChildNodes>
-        </LogicNodeStructure>
-      </SerialOrphansStructure>
+      <SerialOrphansStructure />
       <SerialNodesData>
-        <LogicNode xsi:type="LogicOperationNode">
-          <ID>1179529862</ID>
-          <ProtectedType>None</ProtectedType>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>1044.19373</X>
-          <Y>-618.8605</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames>
-            <string>In</string>
-            <string>In</string>
-            <string>In</string>
-          </VariableChildNames>
-          <LogicOperationType>And</LogicOperationType>
-        </LogicNode>
-        <LogicNode xsi:type="LogicSolverValueNode">
-          <ID>2114207039</ID>
-          <ProtectedType>None</ProtectedType>
-          <Name>LogicSolverValueNode</Name>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>850.3784</X>
-          <Y>-710.0189</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames />
-          <SolverID>1529123755</SolverID>
-        </LogicNode>
-        <LogicNode xsi:type="LogicSolverValueNode">
-          <ID>344250856</ID>
-          <ProtectedType>None</ProtectedType>
-          <Name>LogicSolverValueNode</Name>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>793.3908</X>
-          <Y>-544.9325</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames />
-          <SolverID>1432500577</SolverID>
-        </LogicNode>
-        <LogicNode xsi:type="LogicOperationNode">
-          <ID>1728208104</ID>
-          <ProtectedType>None</ProtectedType>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>243.039764</X>
-          <Y>-1159.305</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames>
-            <string>In</string>
-          </VariableChildNames>
-          <LogicOperationType>And</LogicOperationType>
-        </LogicNode>
-        <LogicNode xsi:type="LogicOperationNode">
-          <ID>385141496</ID>
-          <ProtectedType>None</ProtectedType>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>137.669464</X>
-          <Y>-896.748047</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames>
-            <string>In</string>
-            <string>In</string>
-          </VariableChildNames>
-          <LogicOperationType>Or</LogicOperationType>
-        </LogicNode>
-        <LogicNode xsi:type="LogicOperationNode">
-          <ID>1514332167</ID>
-          <ProtectedType>None</ProtectedType>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>64.93201</X>
-          <Y>-1069.42871</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames>
-            <string>In</string>
-          </VariableChildNames>
-          <LogicOperationType>And</LogicOperationType>
-        </LogicNode>
-        <LogicNode xsi:type="LogicSolverValueNode">
-          <ID>1007254747</ID>
-          <ProtectedType>None</ProtectedType>
-          <Name>LogicSolverValueNode</Name>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>-60.86145</X>
-          <Y>-1122.0022</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames />
-          <SolverID>1851488460</SolverID>
-        </LogicNode>
-        <LogicNode xsi:type="LogicSolverValueNode">
-          <ID>1085875213</ID>
-          <ProtectedType>None</ProtectedType>
-          <Name>LogicSolverValueNode</Name>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>799.395752</X>
-          <Y>-467.163879</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames />
-          <SolverID>1749438368</SolverID>
-        </LogicNode>
-        <LogicNode xsi:type="LogicSolverValueNode">
-          <ID>1930337816</ID>
-          <ProtectedType>None</ProtectedType>
-          <Name>LogicSolverValueNode</Name>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>12.1256714</X>
-          <Y>-896.748047</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames />
-          <SolverID>489857881</SolverID>
-        </LogicNode>
         <LogicNode xsi:type="LogicOperationNode">
           <ID>1090456674</ID>
           <ProtectedType>None</ProtectedType>
@@ -9680,8 +9856,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>941.1208</X>
-          <Y>-1013.95435</Y>
+          <X>998.072144</X>
+          <Y>-839.75</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames>
@@ -9703,11 +9879,12 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>767.0693</X>
+          <X>717.808044</X>
           <Y>-1084.42847</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames>
+            <string>In</string>
             <string>In</string>
             <string>In</string>
             <string>In</string>
@@ -9727,8 +9904,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>537.1917</X>
-          <Y>-1201.18884</Y>
+          <X>354.0538</X>
+          <Y>-1191.13855</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -9746,8 +9923,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>600.2786</X>
-          <Y>-1139.20874</Y>
+          <X>417.140717</X>
+          <Y>-1130.708</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -9765,8 +9942,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>597.702454</X>
-          <Y>-1072.26111</Y>
+          <X>414.564545</X>
+          <Y>-1065.63367</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -9784,12 +9961,31 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>441.0086</X>
+          <X>414.210052</X>
           <Y>-896.748047</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
           <SolverID>698343068</SolverID>
+        </LogicNode>
+        <LogicNode xsi:type="LogicSolverValueNode">
+          <ID>1181036715</ID>
+          <ProtectedType>None</ProtectedType>
+          <Name>LogicSolverValueNode</Name>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>404.9664</X>
+          <Y>-786.4003</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames />
+          <SolverID>83678993</SolverID>
         </LogicNode>
         <LogicNode xsi:type="LogicOperationNode">
           <ID>1460401298</ID>
@@ -9802,11 +9998,12 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>642.9895</X>
-          <Y>-945.8681</Y>
+          <X>717.808044</X>
+          <Y>-936.9345</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames>
+            <string>In</string>
             <string>In</string>
             <string>In</string>
           </VariableChildNames>
@@ -9824,8 +10021,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>441.3631</X>
-          <Y>-975.0366</Y>
+          <X>414.564545</X>
+          <Y>-1005.72388</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -9842,8 +10039,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>619.930359</X>
-          <Y>-737.238342</Y>
+          <X>717.808044</X>
+          <Y>-718.2546</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames>
@@ -9866,8 +10063,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>396.723022</X>
-          <Y>-780.0624</Y>
+          <X>417.140717</X>
+          <Y>-636.00885</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -9885,15 +10082,37 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>370.382874</X>
+          <X>404.9664</X>
           <Y>-698.489</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
           <SolverID>2022797031</SolverID>
         </LogicNode>
+        <LogicNode xsi:type="LogicOperationNode">
+          <ID>1179529862</ID>
+          <ProtectedType>None</ProtectedType>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>723.391541</X>
+          <Y>-493.790375</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames>
+            <string>In</string>
+            <string>In</string>
+            <string>In</string>
+          </VariableChildNames>
+          <LogicOperationType>And</LogicOperationType>
+        </LogicNode>
         <LogicNode xsi:type="LogicSolverValueNode">
-          <ID>1181036715</ID>
+          <ID>2114207039</ID>
           <ProtectedType>None</ProtectedType>
           <Name>LogicSolverValueNode</Name>
           <InvertOutput>false</InvertOutput>
@@ -9904,12 +10123,12 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>387.801331</X>
-          <Y>-630.0631</Y>
+          <X>354.563568</X>
+          <Y>-529.1144</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
-          <SolverID>83678993</SolverID>
+          <SolverID>1529123755</SolverID>
         </LogicNode>
         <LogicNode xsi:type="LogicOperationNode">
           <ID>819212779</ID>
@@ -9922,8 +10141,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>925.6586</X>
-          <Y>-500.325378</Y>
+          <X>425.3795</X>
+          <Y>-422.156464</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames>
@@ -9932,6 +10151,65 @@
             <string>In</string>
           </VariableChildNames>
           <LogicOperationType>Or</LogicOperationType>
+        </LogicNode>
+        <LogicNode xsi:type="LogicSolverValueNode">
+          <ID>344250856</ID>
+          <ProtectedType>None</ProtectedType>
+          <Name>LogicSolverValueNode</Name>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>267.5017</X>
+          <Y>-453.363251</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames />
+          <SolverID>1432500577</SolverID>
+        </LogicNode>
+        <LogicNode xsi:type="LogicSolverValueNode">
+          <ID>1085875213</ID>
+          <ProtectedType>None</ProtectedType>
+          <Name>LogicSolverValueNode</Name>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>273.5066</X>
+          <Y>-388.994965</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames />
+          <SolverID>1749438368</SolverID>
+        </LogicNode>
+        <LogicNode xsi:type="LogicOperationNode">
+          <ID>359154987</ID>
+          <ProtectedType>None</ProtectedType>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>289.8376</X>
+          <Y>-301.483276</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames>
+            <string>In</string>
+            <string>In</string>
+          </VariableChildNames>
+          <LogicOperationType>And</LogicOperationType>
         </LogicNode>
         <LogicNode xsi:type="LogicSolverValueNode">
           <ID>1129090783</ID>
@@ -9945,8 +10223,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>720.6533</X>
-          <Y>-357.318329</Y>
+          <X>115.404877</X>
+          <Y>-336.100861</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -9964,41 +10242,20 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>784.1625</X>
-          <Y>-278.984253</Y>
+          <X>124.340424</X>
+          <Y>-266.700348</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
           <SolverID>497100258</SolverID>
         </LogicNode>
-        <LogicNode xsi:type="LogicOperationNode">
-          <ID>359154987</ID>
-          <ProtectedType>None</ProtectedType>
-          <InvertOutput>false</InvertOutput>
-          <SwapOutput>false</SwapOutput>
-          <Enabled>true</Enabled>
-          <Description />
-          <Weight>1</Weight>
-          <MaxRangeTransform>1</MaxRangeTransform>
-          <MinRangeTransform>0</MinRangeTransform>
-          <HedgeOperation>None</HedgeOperation>
-          <X>861.0031</X>
-          <Y>-358.665344</Y>
-          <Width>1</Width>
-          <Height>1</Height>
-          <VariableChildNames>
-            <string>In</string>
-            <string>In</string>
-          </VariableChildNames>
-          <LogicOperationType>And</LogicOperationType>
-        </LogicNode>
       </SerialNodesData>
       <ID>763341362</ID>
-      <RootX>1276.84888</RootX>
-      <RootY>-751.581665</RootY>
-      <ViewX>-719.6532</ViewX>
-      <ViewY>704.730957</ViewY>
-      <Zoom>0.742396</Zoom>
+      <RootX>1129.44519</RootX>
+      <RootY>-816.3499</RootY>
+      <ViewX>-664.925049</ViewX>
+      <ViewY>704.919434</ViewY>
+      <Zoom>1.53158152</Zoom>
     </LogicTemplate>
     <LogicTemplate>
       <Name>Exit signals</Name>
@@ -10010,28 +10267,85 @@
       <OverrideThresholdSettings>false</OverrideThresholdSettings>
       <Annotations />
       <SerialResultNodeStructure>
-        <ID>1095588184</ID>
+        <ID>766109635</ID>
         <ChildNodes>
           <LogicNodeStructure>
-            <ID>216090863</ID>
-            <ChildNodes />
+            <ID>1095588184</ID>
+            <ChildNodes>
+              <LogicNodeStructure>
+                <ID>216090863</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>996815753</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>535990846</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>1815521370</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+            </ChildNodes>
           </LogicNodeStructure>
           <LogicNodeStructure>
-            <ID>535990846</ID>
-            <ChildNodes />
+            <ID>1883480841</ID>
+            <ChildNodes>
+              <LogicNodeStructure>
+                <ID>535990846</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>1815521370</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>1037307622</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+            </ChildNodes>
           </LogicNodeStructure>
           <LogicNodeStructure>
-            <ID>1815521370</ID>
-            <ChildNodes />
-          </LogicNodeStructure>
-          <LogicNodeStructure>
-            <ID>996815753</ID>
-            <ChildNodes />
+            <ID>1467729768</ID>
+            <ChildNodes>
+              <LogicNodeStructure>
+                <ID>1815521370</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+              <LogicNodeStructure>
+                <ID>2031597615</ID>
+                <ChildNodes />
+              </LogicNodeStructure>
+            </ChildNodes>
           </LogicNodeStructure>
         </ChildNodes>
       </SerialResultNodeStructure>
       <SerialOrphansStructure />
       <SerialNodesData>
+        <LogicNode xsi:type="LogicOperationNode">
+          <ID>766109635</ID>
+          <ProtectedType>None</ProtectedType>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>81.57264</X>
+          <Y>79.75788</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames>
+            <string>In</string>
+            <string>In</string>
+            <string>In</string>
+          </VariableChildNames>
+          <LogicOperationType>Or</LogicOperationType>
+        </LogicNode>
         <LogicNode xsi:type="LogicOperationNode">
           <ID>1095588184</ID>
           <ProtectedType>None</ProtectedType>
@@ -10043,8 +10357,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>-50</X>
-          <Y>-78.5</Y>
+          <X>-207.800842</X>
+          <Y>-58.50797</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames>
@@ -10067,8 +10381,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>-348.961151</X>
-          <Y>-150.6192</Y>
+          <X>-496.899445</X>
+          <Y>-148.7772</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -10086,8 +10400,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>-367.883423</X>
-          <Y>-58.50797</Y>
+          <X>-514.6704</X>
+          <Y>-8.159103</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -10105,8 +10419,8 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>-358.0471</X>
-          <Y>21.5837936</Y>
+          <X>-505.985352</X>
+          <Y>63.9505157</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
@@ -10124,19 +10438,100 @@
           <MaxRangeTransform>1</MaxRangeTransform>
           <MinRangeTransform>0</MinRangeTransform>
           <HedgeOperation>None</HedgeOperation>
-          <X>-351.537323</X>
-          <Y>87.30356</Y>
+          <X>-499.475616</X>
+          <Y>-78.15633</Y>
           <Width>1</Width>
           <Height>1</Height>
           <VariableChildNames />
           <SolverID>1206874578</SolverID>
         </LogicNode>
+        <LogicNode xsi:type="LogicOperationNode">
+          <ID>1883480841</ID>
+          <ProtectedType>None</ProtectedType>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>-207.800842</X>
+          <Y>134.080872</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames>
+            <string>In</string>
+            <string>In</string>
+            <string>In</string>
+          </VariableChildNames>
+          <LogicOperationType>And</LogicOperationType>
+        </LogicNode>
+        <LogicNode xsi:type="LogicSolverValueNode">
+          <ID>1037307622</ID>
+          <ProtectedType>None</ProtectedType>
+          <Name>LogicSolverValueNode</Name>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>-499.475616</X>
+          <Y>156.056961</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames />
+          <SolverID>1720918019</SolverID>
+        </LogicNode>
+        <LogicNode xsi:type="LogicOperationNode">
+          <ID>1467729768</ID>
+          <ProtectedType>None</ProtectedType>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>-207.800842</X>
+          <Y>326.6697</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames>
+            <string>In</string>
+            <string>In</string>
+          </VariableChildNames>
+          <LogicOperationType>And</LogicOperationType>
+        </LogicNode>
+        <LogicNode xsi:type="LogicSolverValueNode">
+          <ID>2031597615</ID>
+          <ProtectedType>None</ProtectedType>
+          <Name>LogicSolverValueNode</Name>
+          <InvertOutput>false</InvertOutput>
+          <SwapOutput>false</SwapOutput>
+          <Enabled>true</Enabled>
+          <Description />
+          <Weight>1</Weight>
+          <MaxRangeTransform>1</MaxRangeTransform>
+          <MinRangeTransform>0</MinRangeTransform>
+          <HedgeOperation>None</HedgeOperation>
+          <X>-497.4781</X>
+          <Y>348.357452</Y>
+          <Width>1</Width>
+          <Height>1</Height>
+          <VariableChildNames />
+          <SolverID>975921002</SolverID>
+        </LogicNode>
       </SerialNodesData>
       <ID>1771768299</ID>
-      <RootX>150</RootX>
-      <RootY>-42.5</RootY>
-      <ViewX>24.65127</ViewX>
-      <ViewY>-15.2867279</ViewY>
+      <RootX>285.696442</RootX>
+      <RootY>96.2664948</RootY>
+      <ViewX>59.6498947</ViewX>
+      <ViewY>-138.8565</ViewY>
       <Zoom>1.62863529</Zoom>
     </LogicTemplate>
     <LogicTemplate>

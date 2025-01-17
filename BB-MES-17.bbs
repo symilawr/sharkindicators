@@ -5,7 +5,7 @@
   <BreakevenOffset>0</BreakevenOffset>
   <MoneyManagement>
     <ApplyMode>Individual</ApplyMode>
-    <EnforceWatermarkDuringLive>false</EnforceWatermarkDuringLive>
+    <EnforceWatermarkDuringLive>true</EnforceWatermarkDuringLive>
     <EnforceNetMaxProfitDuringLive>false</EnforceNetMaxProfitDuringLive>
     <EnforceNetMaxLossDuringLive>false</EnforceNetMaxLossDuringLive>
     <SerializeAccountPerformance>true</SerializeAccountPerformance>
@@ -13,7 +13,7 @@
     <RiskPerTradeOnAccount>0.0625</RiskPerTradeOnAccount>
     <UseDailyMaxProfit>false</UseDailyMaxProfit>
     <UseDailyMaxLoss>true</UseDailyMaxLoss>
-    <DailyMaxLoss>543.75</DailyMaxLoss>
+    <DailyMaxLoss>937</DailyMaxLoss>
     <DailyMaxProfit>0</DailyMaxProfit>
     <EnableTradeFitAndRiskPerTrade>false</EnableTradeFitAndRiskPerTrade>
     <UseMaxConsecutiveLosses>false</UseMaxConsecutiveLosses>
@@ -33,9 +33,9 @@
       <AcceptableVariance>0.01</AcceptableVariance>
     </RiskPerTradeTradeFit>
     <UseDailyWatermark>true</UseDailyWatermark>
-    <ActivateWatermarkAfter>1000</ActivateWatermarkAfter>
+    <ActivateWatermarkAfter>1200</ActivateWatermarkAfter>
     <ActivateWatermarkAfterValueType>Fixed</ActivateWatermarkAfterValueType>
-    <StopTradingAfterWatermark>0.54375</StopTradingAfterWatermark>
+    <StopTradingAfterWatermark>0.63</StopTradingAfterWatermark>
     <StopTradingAfterWatermarkValueType>PercentOf</StopTradingAfterWatermarkValueType>
     <UseForAutoTrading_Daily>true</UseForAutoTrading_Daily>
     <UseForManualTrading_Daily>true</UseForManualTrading_Daily>
@@ -750,7 +750,7 @@
                         <ShortThreshold>0.8</ShortThreshold>
                         <ShowOnChart>false</ShowOnChart>
                         <ShowRacingStripes>true</ShowRacingStripes>
-                        <BHTemplateFile>MES-1-min-20250114.bht</BHTemplateFile>
+                        <BHTemplateFile>MES-1-min-20250116.bht</BHTemplateFile>
                       </TriggerBase>
                       <TriggerBase xsi:type="ProfitLossTrigger">
                         <Mode>Loss</Mode>
@@ -795,7 +795,7 @@
                         <ShortThreshold>0.8</ShortThreshold>
                         <ShowOnChart>false</ShowOnChart>
                         <ShowRacingStripes>true</ShowRacingStripes>
-                        <BHTemplateFile>MES-1-min-20250114.bht</BHTemplateFile>
+                        <BHTemplateFile>MES-1-min-20250116.bht</BHTemplateFile>
                       </TriggerBase>
                       <TriggerBase xsi:type="ProfitLossTrigger">
                         <Mode>Loss</Mode>
@@ -815,7 +815,7 @@
               </TriggerConditionAndAction>
             </Triggers>
           </StopLoss>
-          <Quantity>6</Quantity>
+          <Quantity>10</Quantity>
         </OrderSettingsSet>
       </value>
     </item>
@@ -918,7 +918,6 @@
     <MarketDataThrottleDelay>300</MarketDataThrottleDelay>
   </StrategyManagerEngineOptions>
   <BloodHoundTemplateNames>
-    <string>MES-1-min-20250114.bht</string>
     <string>MES-1-min-20250116.bht</string>
   </BloodHoundTemplateNames>
   <UIColorSerialize>-1315601</UIColorSerialize>
